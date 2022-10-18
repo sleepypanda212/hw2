@@ -8,22 +8,32 @@
   gap: 10px;
 }
 
+/* if desktop */
+.mobile_device_480px {
+  display: none;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .mobile_device_480px{display: block;}
+  .desktop {display: none;}
+}
+
 .menu {
   background-color: rgb(76, 76, 76);
   overflow: hidden;
-  height: 30px;
+  height: 3.5vw;
   display: flex;
- align-items: center;
- justify-content: left;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .menu a {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 0.9vw 1vw;
+  padding: 5vw 1vw;
   text-decoration: none;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
 }
 
 .menu div {
@@ -43,6 +53,41 @@
   color: black;
 }
 
+.menu-mobile {
+  background-color: rgb(76, 76, 76);
+  overflow: hidden;
+  height: 3.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu-mobile a {
+  float: cent;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5vw 1vw;
+  text-decoration: none;
+  font-size: 2vw;
+}
+
+.menu-mobile div {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.menu-mobile a:hover {
+  background-color: rgb(159, 159, 159);
+  color: black;
+}
+
+.menu-mobile a.active {
+  background-color: #ddd;
+  color: black;
+}
+
 .brand-item-container {
   display: flex;
   flex-direction: row;
@@ -57,6 +102,23 @@
   width: 70rem;
   max-width:25%;
   height:auto;
+}
+
+.brand-mobile-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.brand-mobile-item {
+  gap: 10rem;
+  margin: 10px;
+  width: 70rem;
+  max-width:50%;
+  height:auto;
+
 }
 
 .review-item {
@@ -79,14 +141,10 @@
 }
 
 .contact-item1 {
-  gap: 5rem;
-  width: 10rem;
   margin-right: auto;
   text-align: left;
 }
 .contact-item3 {
-  gap: 5rem;
-  width: 10rem;
   margin-left: auto;
   text-align: right;
 }
@@ -102,4 +160,25 @@
 .sns-item { 
   gap: 5rem;
   width: 15%;
+}
+
+.sns-mobile-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  white-space: nowrap;
+  line-height: 0.8;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.sns-mobile-item1 { 
+  margin-right: auto;
+  text-align: left;
+}
+
+.sns-mobile-item2 { 
+  margin-left: auto;
+  text-align: right;
 }
