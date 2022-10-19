@@ -177,10 +177,6 @@
   display: none;
 }
 
-.desktop {
-  display: none;
-}
-
 @media all and (min-width: 601px) {
   .desktop{display: block;}
   .mobile_device_480px {
@@ -191,5 +187,4 @@
 @media all and (max-width: 600px) {
   .desktop {display: none;}
   .mobile_device_480px{display: block;}
-  
 }
