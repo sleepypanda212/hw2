@@ -173,9 +173,12 @@
   text-align: right;
 }
 
-@media all and (max-width: 600px) {
-  .mobile_device_480px{display: block;}
-  .desktop {display: none;}
+.mobile_device_480px {
+  display: none;
+}
+
+.desktop {
+  display: none;
 }
 
 @media all and (min-width: 601px) {
@@ -183,4 +186,10 @@
   .mobile_device_480px {
     display: none;
   }
+}
+
+@media all and (max-width: 600px) {
+  .desktop {display: none;}
+  .mobile_device_480px{display: block;}
+  
 }
